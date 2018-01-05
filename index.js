@@ -4,6 +4,7 @@ var peer = new Peer({
   trickle: false
 });
 
+
 peer.on('signal', function (data) {
   document.getElementById('ourId').value = JSON.stringify(data)
 })
@@ -20,6 +21,7 @@ document.getElementById('send').addEventListener('click', () => {
   peer.send(yourMessage);
   document.getElementById('yourMessage').value = '';
   document.getElementById('yourMessage').append('\n');
+
 })
 
 peer.on('data', (data) => {
