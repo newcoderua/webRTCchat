@@ -1,0 +1,14 @@
+{
+  "name": "simple-p2p-videochat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js:bundle.js"
+  },
+  "author": "Vlad Stadnyk",
+  "license": "ISC",
+  "dependencies": {
+    "simple-peer": "^8.2.0"
+  }
+}
